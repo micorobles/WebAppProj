@@ -1,0 +1,71 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10%;
+}
+
+.back{
+    /* border: 1px solid red; */
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back:hover{
+    background-color: rgba(214, 196, 175, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: large;
+}
+
+.add-form-container {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: darkslategray;
+    width: 50%;
+    height: 400px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table tr td{
+    /* border: 1px solid black; */
+    height: 50px;
+}
+
+.add-form-container table tr td .textField{
+    /* margin-left: 15px; */
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+ .buttonSubmit{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: whitesmoke ;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 1px rgb(24, 20, 20);
+    color: darkslategray;
+    margin-top: 20px;
+    
+}

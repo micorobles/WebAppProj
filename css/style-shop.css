@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    overflow: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+    display: block;
+}
+
+.shop-header{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid #e8e8e1 ;
+    width: 100%;
+    height: 80px;
+}
+
+.shop-header .header-promotion{
+    /* border: 1px solid black; */
+    height: 40px;
+    background-color: darkslategray;
+    font-size: large;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-header .header-title{
+    /* border: 1px solid black; */
+    height: 40px;
+    display: flex;
+}
+
+.shop-header .header-title .header-title-left{
+    /* border: 1px solid blue; */
+    width: 20%;
+    height: 40px;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.shop-header .header-title .header-title-center{
+    /* border: 1px solid yellow; */
+    width: 60%;
+    height: 40px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslategray;
+    text-align: center;
+    position: relative;
+}
+
+.shop-header .header-title .header-title-right{
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 20px;
+    padding-right: 40px;
+
+}
+
+.shop-header .header-title .header-title-right img{
+    /* border: 1px solid pink; */
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.shop-content{
+    /* border: 1px solid black; */
+    /* background-color: red; */
+    max-width: 100%;
+    height: 100%;
+    margin: 30px 20px 30px 20px;
+    padding: 20px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 315px 315px 315px 315px;
+    gap: 50px;
+}
+
+.shop-content .content-items{
+    /* border: 1px solid red; */
+    height: 500px;
+}
+
+.shop-content .content-items .content-items-merch{
+    /* border: 1px solid blue; */
+    height: 400px;
+}
+
+.shop-content .content-items .content-items-merch img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.merchImage{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.merchImage:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.shop-content .content-items .content-items-details{
+    /* border: 1px solid green; */
+    height: 100px;
+}
+
+ .add-to-cart{
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    color: darkslategray;
+    height: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.shop-content .content-items .content-items-details ul{
+    padding: 10px 0 10px 0;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.shop-content .content-items .content-items-details ul li{
+    margin-bottom: 10px;
+   
+}
+
+.shop-content .content-items .content-items-details ul .merchName{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;   
+}
+
+.shop-content .content-items .content-items-details ul .merchPrice{
+    color: black;
+    font-size: large;   
+    color: darkslategrey;
+}

@@ -1,0 +1,204 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-container {
+    background-color: white;
+    margin: 10% auto; /* 15% from the top and centered */
+    /* padding: 20px; */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    /* border-radius: 5px; */
+  }
+  
+  .modal .modal-container .modal-header {
+    /* border: 1px solid black; */
+    /* border-radius: 5px 5px 0 0; */
+    height: 40px;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    background-color: darkslategray;
+  }
+
+  .modal .modal-container .modal-content {
+    /* border: 1px solid red; */
+    /* border-radius: 0 0 5px 5px; */
+    height: 100%;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .modal .modal-container .modal-content .content-item{
+    border: 1px solid #888;
+    /* width: 80%; */
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    height: 150px;
+    display: flex;
+    /* align-items: center; */
+
+  }
+
+  .content-item .item-photo {
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    gap: 3px;
+    /* position: absolute;
+    left: 20px;
+    top: 20px; */
+  }
+
+  .content-item .item-photo img {
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .content-item .item-info {
+    /* border: 1px solid black; */
+    /* width: fit-content; */
+    width: 35%;
+    height: 100%;
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    
+  }
+
+  .item-info .info-name {
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    color: black;
+    font-size: larger;
+  }
+
+  .item-info .info-price {
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    color: black;
+    font-size: large;
+  }
+  
+  .content-item .item-qty{
+    /* border: 1px solid black; */
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 3px;
+    /* margin-left: 10px; */
+  }
+
+  .item-qty [class^="qty-"] {
+    border: 1px solid black;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    background: darkslategray;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: whitesmoke;
+  }
+
+  .item-qty .qty-txtQTY{
+    cursor: default;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #ddd;
+    color: black;
+    font-size: small;
+  }
+
+  .modal .modal-container .modal-content .content-details {
+    /* border: 1px solid brown; */
+    height: 100px;
+    display: flex;
+  }
+
+  .modal .modal-container .modal-content .details-voucher{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+  }
+
+  .modal .modal-container .modal-content .details-amount{
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 100%;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .details-amount .amount-total{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+    font-size: large;
+  }
+
+  .details-amount .amount-button{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+  }
+
+  .button-add{
+    cursor: pointer;
+    width: 94px;
+    height: 34px;
+    background: darkslategray;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: small;
+    color: whitesmoke;
+   
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
